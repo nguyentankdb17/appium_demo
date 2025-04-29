@@ -2,7 +2,7 @@ const HomeScreen = require('../pageobjects/home.screen');
 const LoginScreen = require('../pageobjects/login.screen');
 
 describe('Login Test', () => {
-    it('should not login with empty credentials', async () => {
+    it('should not login with empty inputs', async () => {
         await HomeScreen.profileButton.click();
         await HomeScreen.loginButton.click();
         // Perform login
@@ -13,7 +13,6 @@ describe('Login Test', () => {
         });
 
     it('should not login with invalid credentials', async () => {
-
     // Perform login
     await LoginScreen.login(["wrongUser@gmail.com"], ["wrongPassword"]);
     await expect(LoginScreen.errorInvalidMessage).toHaveText(
@@ -23,7 +22,9 @@ describe('Login Test', () => {
 
     it('should login with valid credentials', async () => {
     // Perform login
-    await LoginScreen.login(["abc@gmail.com"], ["123456789"]);
-    await expect(HomeScreen.loginButton).not.toBeDisplayed();
+    await LoginScreen.login(["khanh@gmail.com"], ["12345678"]);
+    await expect(HomeScreen.welcomeBackMessgae).toHaveText(
+        "Welcome back"
+        );
     });
 });

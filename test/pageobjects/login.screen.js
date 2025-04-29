@@ -20,10 +20,14 @@ class LoginScreen {
     get errorInvalidMessage() {
       return $('//android.widget.TextView[@text="The supplied auth credential is incorrect, malformed or has expired."]');
     }
+
+    
   
     async login(email, password) {
         await this.inputEmail.clearValue();
         await this.inputPassword.clearValue();
+        
+        await sleep(2000);
     
 
         await this.inputEmail.click();
@@ -36,5 +40,10 @@ class LoginScreen {
     }
     
   }
+
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+  
   
 module.exports = new LoginScreen();
