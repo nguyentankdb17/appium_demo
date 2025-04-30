@@ -1,0 +1,81 @@
+{
+    "start": "2025-04-30T10:21:35.779Z",
+    "end": "2025-04-30T10:21:48.760Z",
+    "capabilities": {
+        "platformName": "Android",
+        "automationName": "UiAutomator2",
+        "deviceName": "emulator-5554",
+        "app": "/home/nguyentan/Documents/repos/appium/app/TicketHub.apk",
+        "platform": "LINUX",
+        "webStorageEnabled": false,
+        "takesScreenshot": true,
+        "javascriptEnabled": true,
+        "databaseEnabled": false,
+        "networkConnectionEnabled": true,
+        "locationContextEnabled": false,
+        "warnings": {},
+        "desired": {
+            "platformName": "Android",
+            "automationName": "UiAutomator2",
+            "deviceName": "emulator-4555",
+            "app": "/home/nguyentan/Documents/repos/appium/app/TicketHub.apk"
+        },
+        "deviceUDID": "emulator-5554",
+        "appPackage": "com.example.tickethub",
+        "appActivity": "com.example.tickethub.MainActivity",
+        "pixelRatio": "2.625",
+        "statBarHeight": 63,
+        "viewportRect": {
+            "left": 0,
+            "top": 63,
+            "width": 1080,
+            "height": 2337
+        },
+        "deviceApiLevel": 36,
+        "platformVersion": "16",
+        "deviceManufacturer": "Google",
+        "deviceModel": "sdk_gphone64_x86_64",
+        "deviceScreenSize": "1080x2400",
+        "deviceScreenDensity": 420,
+        "sessionId": "1d1871fa-48b9-46da-b554-f19cf37bfc5b"
+    },
+    "framework": "mocha",
+    "mochaOpts": {
+        "timeout": 60000,
+        "ui": "bdd"
+    },
+    "suites": [
+        {
+            "name": "Movie Test Suite",
+            "duration": 12122,
+            "start": "2025-04-30T10:21:35.788Z",
+            "end": "2025-04-30T10:21:47.910Z",
+            "sessionId": "1d1871fa-48b9-46da-b554-f19cf37bfc5b",
+            "tests": [
+                {
+                    "name": "TC1: should return search results",
+                    "start": "2025-04-30T10:21:35.788Z",
+                    "end": "2025-04-30T10:21:43.601Z",
+                    "duration": 7813,
+                    "state": "passed"
+                },
+                {
+                    "name": "TC2: should show movie details",
+                    "start": "2025-04-30T10:21:43.602Z",
+                    "end": "2025-04-30T10:21:47.909Z",
+                    "duration": 4307,
+                    "state": "passed"
+                }
+            ],
+            "hooks": []
+        }
+    ],
+    "specs": [
+        "file:///home/nguyentan/Documents/repos/appium/test/specs/movie.e2e.js"
+    ],
+    "state": {
+        "passed": 2,
+        "failed": 0,
+        "skipped": 0
+    }
+}

@@ -1,0 +1,116 @@
+{
+    "start": "2025-04-30T10:20:49.471Z",
+    "end": "2025-04-30T10:21:24.144Z",
+    "capabilities": {
+        "platformName": "Android",
+        "automationName": "UiAutomator2",
+        "deviceName": "emulator-5554",
+        "app": "/home/nguyentan/Documents/repos/appium/app/TicketHub.apk",
+        "platform": "LINUX",
+        "webStorageEnabled": false,
+        "takesScreenshot": true,
+        "javascriptEnabled": true,
+        "databaseEnabled": false,
+        "networkConnectionEnabled": true,
+        "locationContextEnabled": false,
+        "warnings": {},
+        "desired": {
+            "platformName": "Android",
+            "automationName": "UiAutomator2",
+            "deviceName": "emulator-4555",
+            "app": "/home/nguyentan/Documents/repos/appium/app/TicketHub.apk"
+        },
+        "deviceUDID": "emulator-5554",
+        "appPackage": "com.example.tickethub",
+        "appActivity": "com.example.tickethub.MainActivity",
+        "pixelRatio": "2.625",
+        "statBarHeight": 63,
+        "viewportRect": {
+            "left": 0,
+            "top": 63,
+            "width": 1080,
+            "height": 2337
+        },
+        "deviceApiLevel": 36,
+        "platformVersion": "16",
+        "deviceManufacturer": "Google",
+        "deviceModel": "sdk_gphone64_x86_64",
+        "deviceScreenSize": "1080x2400",
+        "deviceScreenDensity": 420,
+        "sessionId": "54d885a5-ec89-4bf7-8212-43a59eaff970"
+    },
+    "framework": "mocha",
+    "mochaOpts": {
+        "timeout": 60000,
+        "ui": "bdd"
+    },
+    "suites": [
+        {
+            "name": "Login Test Suite",
+            "duration": 33841,
+            "start": "2025-04-30T10:20:49.480Z",
+            "end": "2025-04-30T10:21:23.321Z",
+            "sessionId": "54d885a5-ec89-4bf7-8212-43a59eaff970",
+            "tests": [
+                {
+                    "name": "TC1: should not login with empty inputs",
+                    "start": "2025-04-30T10:20:49.480Z",
+                    "end": "2025-04-30T10:21:02.450Z",
+                    "duration": 12970,
+                    "state": "passed"
+                },
+                {
+                    "name": "TC2: should not login with invalid credentials",
+                    "start": "2025-04-30T10:21:02.451Z",
+                    "end": "2025-04-30T10:21:12.103Z",
+                    "duration": 9652,
+                    "state": "passed"
+                },
+                {
+                    "name": "TC3: should login with valid credentials",
+                    "start": "2025-04-30T10:21:12.103Z",
+                    "end": "2025-04-30T10:21:23.320Z",
+                    "duration": 11217,
+                    "state": "passed"
+                }
+            ],
+            "hooks": [
+                {
+                    "start": "2025-04-30T10:20:49.481Z",
+                    "end": "2025-04-30T10:20:55.210Z",
+                    "duration": 5729,
+                    "title": "\"before each\" hook for Login Test Suite",
+                    "associatedSuite": "Login Test Suite",
+                    "associatedTest": "TC1: should not login with empty inputs",
+                    "state": "passed"
+                },
+                {
+                    "start": "2025-04-30T10:21:02.452Z",
+                    "end": "2025-04-30T10:21:04.625Z",
+                    "duration": 2173,
+                    "title": "\"before each\" hook for Login Test Suite",
+                    "associatedSuite": "Login Test Suite",
+                    "associatedTest": "TC2: should not login with invalid credentials",
+                    "state": "passed"
+                },
+                {
+                    "start": "2025-04-30T10:21:12.103Z",
+                    "end": "2025-04-30T10:21:13.357Z",
+                    "duration": 1254,
+                    "title": "\"before each\" hook for Login Test Suite",
+                    "associatedSuite": "Login Test Suite",
+                    "associatedTest": "TC3: should login with valid credentials",
+                    "state": "passed"
+                }
+            ]
+        }
+    ],
+    "specs": [
+        "file:///home/nguyentan/Documents/repos/appium/test/specs/login.e2e.js"
+    ],
+    "state": {
+        "passed": 3,
+        "failed": 0,
+        "skipped": 0
+    }
+}
