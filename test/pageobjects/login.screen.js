@@ -1,10 +1,10 @@
 class LoginScreen {
     get inputEmail() {
-      return $('//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.widget.EditText[1]/android.view.View');
+      return $('//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.widget.EditText[1]');
     }
   
     get inputPassword() {
-      return $('//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.widget.EditText[2]/android.view.View');
+      return $('//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]/android.widget.EditText[2]');
     }
   
     get btnLogin() {
@@ -24,26 +24,19 @@ class LoginScreen {
     
   
     async login(email, password) {
-        await this.inputEmail.clearValue();
-        await this.inputPassword.clearValue();
-        
-        await sleep(2000);
-    
-
-        await this.inputEmail.click();
-        await this.inputEmail.sendKeys(email);
-        
-        await this.inputPassword.click();
-        await this.inputPassword.sendKeys(password);
-    
-        await this.btnLogin.click();
-    }
-    
-  }
-
-  function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-  }
+      await this.inputEmail.clearValue();
+      await this.inputPassword.clearValue();
   
+
+      await this.inputEmail.click();
+      await this.inputEmail.sendKeys(email);
+      
+      await this.inputPassword.click();
+      await this.inputPassword.sendKeys(password);
+  
+      await this.btnLogin.click();
+    }
+  
+  }
   
 module.exports = new LoginScreen();
